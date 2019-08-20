@@ -41,7 +41,8 @@ app.post("/api/Upload", function(req, res) {
         //console.log("file uploaded sucessfully");
     });
 });
-app.listen(3000, function(a) {
-    console.log("Listening to port 2000");
-    console.log(upload);
-});
+// app.listen(3000, function(a) {
+//     console.log("Listening to port 2000");
+//     console.log(upload);
+// });
+app.listen(process.env.PORT, '0.0.0.0');
